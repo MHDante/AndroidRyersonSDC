@@ -10,10 +10,9 @@
         <activity
             android:name="com.mhdante.androidryersonsdc.MainActivity"
             android:label="@string/app_name"
-            >
+            android:launchMode="singleTask">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
@@ -25,7 +24,21 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.mhdante.hello.MainActivity" />
         </activity>
+        <activity
+            android:name="com.mhdante.androidryersonsdc.FragmentTester"
+            android:label="@string/title_activity_fragment_tester"
+            android:parentActivityName="com.mhdante.androidryersonsdc.MainActivity"
+            android:launchMode="singleTask" >
+        </activity>
+        <activity
+            android:name="com.mhdante.androidryersonsdc.FragmentTester2"
+            android:label="@string/title_activity_fragment_tester2"
+            android:parentActivityName="com.mhdante.androidryersonsdc.MainActivity"
+            android:launchMode="singleTask" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.mhdante.androidryersonsdc.MainActivity" />
+        </activity>
     </application>
 
 </manifest>
-
